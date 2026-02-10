@@ -3,9 +3,9 @@
 
 str = "Hello World"
 
-str.endswith("World") # This will return true as the string ends with "World"
+str.endswith("ld") # This will return true as the string ends with "ld"
 
-str.startswith("Hello") # This will return true as the string starts with "Hello"
+str.startswith("He") # This will return true as the string starts with "He"
 
 str.find("o") # This will return the index of the first occurrence of "o" in the string, which is 4
 
