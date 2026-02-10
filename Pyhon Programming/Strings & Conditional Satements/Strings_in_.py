@@ -4,6 +4,6 @@
 str1 = "Hello"
 str2 = "World"
 
-Final_string = str1 + str2
+Final_string = str1 + " " + str2
 
 print(Final_string)
