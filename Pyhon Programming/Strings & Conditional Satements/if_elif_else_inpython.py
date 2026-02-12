@@ -7,3 +7,6 @@ elif (Age >= 13 and Age < 18): #elif statement is used to check multiple conditi
     print("You are a teenager") 
 else:        #else statement is used to execute a block of code if the condition in the if statement is false. It is used after an if statement and after any number of elif statements. It is executed when all the conditions in the if and elif statements are false.
     print("You are a child")
+
+# After The if or elif or else statement are used, Make Sure There is Indentation. 
+# Indentation is used to indicate a block of code. In Python, indentation is used to indicate a block of code. The block of code is executed when the condition in the if statement is true. The block of code is executed when the condition in the elif statement is true. The block of code is executed when the condition in the else statement is true.
