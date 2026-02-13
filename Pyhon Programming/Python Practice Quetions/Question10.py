@@ -9,4 +9,5 @@ if (num1 >= num2) and (num1 >= num3): # The if statement checks if num1 is great
     print("The Greatest Number is From num1: ", num1)
 elif (num2 >= num1) and (num2 >= num3):
     print("The Greatest Number is From num2: ", num2)
-else:    print("The Greatest Number is From num3: ", num3)
+else:    
+    print("The Greatest Number is From num3: ", num3)
