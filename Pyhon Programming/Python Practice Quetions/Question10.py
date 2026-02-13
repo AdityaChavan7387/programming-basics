@@ -6,10 +6,7 @@ num2 = float(input("Enter second number: "))
 num3 = float(input("Enter third number: "))
 
 if (num1 >= num2) and (num1 >= num3): # The if statement checks if num1 is greater than or equal to both num2 and num3. If this condition is true, it means num1 is the greatest number among the three.
-    greatest = num1
+    print("The Greatest Number is From num1: ", num1)
 elif (num2 >= num1) and (num2 >= num3):
-    greatest = num2
-else:    greatest = num3
-
-
-print("The greatest number is:", greatest)
+    print("The Greatest Number is From num2: ", num2)
+else:    print("The Greatest Number is From num3: ", num3)
