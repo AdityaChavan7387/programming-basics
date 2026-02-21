@@ -84,3 +84,24 @@ student_marks.clear()
 
 print("\nAfter clearing dictionary:")
 print(student_marks)   # Output: {}
+
+# -------------------------------
+# 8. ADD a new subject
+# -------------------------------
+# To add, just write: dictionary[key] = value
+
+student_marks["History"] = 92   # Adding new subject
+
+print("\nAfter Adding History:")
+print(student_marks)
+
+
+# -------------------------------
+# 9. REMOVE using del
+# -------------------------------
+# del removes the key directly
+
+del student_marks["English"]
+
+print("\nAfter deleting English using del:")
+print(student_marks)
