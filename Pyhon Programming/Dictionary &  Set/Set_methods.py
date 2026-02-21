@@ -30,3 +30,19 @@ element = my_set.pop()
 print(element)  # Output: 1 or 2 (arbitrary element)
 print(my_set)  # Output: {2} or {1} (remaining element) 
 
+# 5. update() method
+# This method is used to update the set with the union of itself and another iterable (like list, set, etc.).
+my_set.update([3, 4])
+print(my_set)  # Output: {1, 2, 3, 4}
+
+# 6. union() method
+# This method is used to return a new set that is the union of the set and another set.
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}    
+union_set = set1.union(set2)
+print(union_set)  # Output: {1, 2, 3, 4, 5} 
+
+# 7. intersection() method
+# This method is used to return a new set that is the intersection of the set and another set.
+intersection_set = set1.intersection(set2)  
+print(intersection_set)  # Output: {3}
