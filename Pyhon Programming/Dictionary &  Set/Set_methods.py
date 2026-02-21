@@ -13,12 +13,7 @@ print(my_set)  # Output: {1, 2}
 my_set.remove(1)
 print(my_set)  # Output: {2}    
 
-# 3. discard() method
-# This method is used to remove an element from the set. If the element is not present in the set, it will not raise an error.
-my_set.discard(2)
-print(my_set)  # Output: set()
-
-# 4. clear() method
+# 3. clear() method
 # This method is used to remove all elements from the set.
 my_set.add(1)
 my_set.add(2)
@@ -26,7 +21,7 @@ print(my_set)  # Output: {1, 2}
 my_set.clear()
 print(my_set)  # Output: set()
 
-# 5. pop() method
+# 4. pop() method
 # This method is used to remove and return an arbitrary element from the set. If the set is empty, it will raise a KeyError.
 my_set.add(1)
 my_set.add(2)
