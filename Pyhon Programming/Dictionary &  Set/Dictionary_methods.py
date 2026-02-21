@@ -1,4 +1,7 @@
-# In this we will see some of the methods or functions of dictionary.
+# I wrote the code but it was messy so i will take help of AI for this one and make it simple and easy to understand.
+# A dictionary stores data in the form of:
+# key : value
+# Here, subject is the key and marks are the value.
 
 student_marks = {
     "Math": 85,
@@ -7,45 +10,77 @@ student_marks = {
     "History": 92
 }
 
-# 1. get() method: This method is used to retrieve the value associated with a specific key in the dictionary. It takes the key as an argument and returns the corresponding value. If the key is not found, it returns a default value (which can be specified as a second argument) or None if no default value is provided.
-subject = input("Enter the subject to get the marks: ").title()
-marks = student_marks.get(subject, "Subject not found in the student marks dictionary.")
-print(f"The marks for {subject} are: {marks}")  
+# -------------------------------
+# 1. get() → Find value using key
+# -------------------------------
+# It safely gets the value of a key.
+# If the key is not found, it shows a message instead of giving an error.
 
-# 2. keys() method: This method returns a view object that displays a list of all the keys in the dictionary.
-print("Subjects available in the student marks dictionary:")
+subject = input("Enter subject name: ").title()
+
+marks = student_marks.get(subject, "Subject not found")
+
+print("Marks:", marks)
+
+
+# -------------------------------
+# 2. keys() → Show all keys
+# -------------------------------
+print("\nAll Subjects:")
 for subject in student_marks.keys():
     print(subject)
 
-# 3. values() method: This method returns a view object that displays a list of all the values in the dictionary.
-print("Marks for all subjects in the student marks dictionary:")
+
+# -------------------------------
+# 3. values() → Show all values
+# -------------------------------
+print("\nAll Marks:")
 for marks in student_marks.values():
     print(marks)
 
-# 4. items() method: This method returns a view object that displays a list of key-value pairs in the dictionary as tuples.
-print("Subjects and their corresponding marks in the student marks dictionary:")    
-for subject, marks in student_marks.items():
-    print(f"{subject}: {marks}")
 
-# 5. update() method: This method is used to update the dictionary with key-value pairs from another dictionary or an iterable of key-value pairs. If a key already exists, its value will be updated.
-new_marks = {
-    "Math": 88,  # Updating existing key
-    "Geography": 80  # Adding new key
-}
-student_marks.update(new_marks)
-print("Updated student marks dictionary:")
+# -------------------------------
+# 4. items() → Show key and value together
+# -------------------------------
+print("\nSubjects and Marks:")
 for subject, marks in student_marks.items():
-    print(f"{subject}: {marks}")
+    print(subject, ":", marks)
 
-# 6. pop() method: This method is used to remove a key-value pair from the dictionary based on the key. It takes the key as an argument and returns the value associated with that key. If the key is not found, it raises a KeyError or returns a default value if provided.
-removed_marks = student_marks.pop("Science", "Subject not found in the student marks dictionary.")  
-print(f"Removed marks for Science: {removed_marks}")
-print("Student marks dictionary after removing Science:")
+
+# -------------------------------
+# 5. update() → Add or change values
+# -------------------------------
+# If key exists → it changes the value
+# If key does not exist → it adds new key
+
+student_marks.update({
+    "Math": 88,        # Changed value
+    "Geography": 80    # New subject added
+})
+
+print("\nAfter update:")
 for subject, marks in student_marks.items():
-    print(f"{subject}: {marks}")
+    print(subject, ":", marks)
 
-# 7. clear() method: This method is used to remove all key-value pairs from the dictionary, leaving it empty.
+
+# -------------------------------
+# 6. pop() → Remove one item
+# -------------------------------
+# Removes the key and returns its value
+
+removed = student_marks.pop("Science", "Not found")
+
+print("\nRemoved Science marks:", removed)
+
+print("After removing Science:")
+for subject, marks in student_marks.items():
+    print(subject, ":", marks)
+
+
+# -------------------------------
+# 7. clear() → Remove everything
+# -------------------------------
 student_marks.clear()
-print("Student marks dictionary after clearing all entries:")
-print(student_marks)  # This will print an empty dictionary {}  
 
+print("\nAfter clearing dictionary:")
+print(student_marks)   # Output: {}
