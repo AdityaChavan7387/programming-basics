@@ -1,0 +1,4 @@
+Hi Everyone,
+We Are learning File I/O in Python.
+using Java
+I like programming.
