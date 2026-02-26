@@ -1,0 +1,5 @@
+# Here we see the syntax of file with "With" statement. The "with" statement is used to wrap the execution of a block of code with methods defined by a context manager. The "with" statement is used to ensure that resources are properly managed. In the case of file handling, it ensures that the file is properly closed after its suite finishes, even if an exception is raised at some point. The syntax of the "with" statement is as follows:        
+
+with open("Demo.txt", "r") as file:
+    data = file.read()
+    print(data) # The "with" statement automatically closes the file after the block of code is executed, so we don't need to explicitly close the file. This is a good practice as it ensures that the file is properly closed and resources are released, even if an error occurs while processing the file.
