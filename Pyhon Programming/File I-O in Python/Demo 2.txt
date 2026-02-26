@@ -1,0 +1,4 @@
+This is a demo file for write mode.
+This is the second line of the demo file.
+This is a demo file for append mode.
+This is the second line of the demo file.
